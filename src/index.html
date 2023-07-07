@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/icons/pokemon_logo.svg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>PoKeMoN</title>
+  </head>
+  <body class="bg-[#FFD845]">
+    <header>
+      <div class="container max-w-[1420px] h-[100%] p-[49px] mx-auto">
+        <nav class="nav-wrapper flex justify-between mb-[70px]">
+          <span></span>
+          <img src="./assets/icons/pokemon_logo.svg" alt="" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            style="fill: rgba(0, 0, 0, 1)"
+            id="heart"
+          >
+            <path
+              d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"
+            ></path>
+          </svg>
+        </nav>
+        <div class="input-wrapper flex justify-evenly">
+          <div
+            class="select-wrapper1 w-[260px] h-[60px] bg-[#fff] border-[2px] border-solid border-[#000] rounded-[15px] flex items-center justify-center"
+          >
+            <select
+              name=""
+              id="type"
+              class="border-none outline-none text-[#000] text-[24px] font-bold leading-normal"
+            >
+              <option selected>Gross</option>
+            </select>
+          </div>
+          <div
+            class="input-search flex w-[300px] h-[60px] py-[16px] px-[18px] justify-between bg-[#fff] border-[2px] border-solid border-[#000] rounded-[15px]"
+          >
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Search"
+              class="ml-[11px] outline-none border-none text-[#000] text-[24px] w-[60%] font-bold leading-normal placeholder-black"
+            />
+            <img src="./assets/icons/search.svg" alt="" />
+          </div>
+          <div
+            class="select-wrapper1 w-[260px] h-[60px] bg-[#fff] border-[2px] border-solid border-[#000] rounded-[15px] flex items-center justify-center"
+          >
+            <select
+              name=""
+              id="sort_select"
+              class="border-none outline-none text-[#000] text-[24px] font-bold leading-normal"
+            >
+              <option selected>Sort by</option>
+              <option>A-Z</option>
+              <option>Z-A</option>
+            </select>
+          </div>
+          <button
+            class="border-[2px] border-solid border-[#000] rounded-[15px] w-[200px] h-[60px] bg-[#fff] text-[#000] text-[24px] font-bold leading-normal"
+          >
+            Button
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="hero">
+        <div class="container max-w-[1420px] h-[100%] p-[49px] mx-auto">
+          <div id="wrapper" class="flex flex-wrap gap-[30px]"></div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="./db.js"></script>
+  <script src="./utils.js"></script>
+  <script src="./app.js"></script>
+</html>

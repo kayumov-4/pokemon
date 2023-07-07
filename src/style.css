@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap");
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.card__ok {
+    width: 100%;
+    border-bottom: 2px solid #000;
+}
